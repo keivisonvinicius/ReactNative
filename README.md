@@ -1,68 +1,35 @@
- Descrição do Projeto
+# Aplicativo de Cursos (React Native)
 
-Este é um aplicativo mobile desenvolvido em React Native utilizando Expo, React Navigation e Firebase Firestore.
-O objetivo do projeto é demonstrar conceitos fundamentais ensinados durante o semestre:
+##  Descrição do Projeto
+Este é um aplicativo mobile desenvolvido em **React Native** usando **Expo**, **React Navigation** e **Firebase Firestore**.
 
-Componentes funcionais
+O projeto demonstra conceitos fundamentais como:
+- Componentes funcionais
+- Hooks (`useState`, `useEffect`)
+- Estilização com `StyleSheet`
+- Flexbox
+- Navegação entre telas
+- Consumo de dados do Firestore
+- Passagem de parâmetros entre telas
 
-Hooks (useState, useEffect)
+---
 
-Estilização com StyleSheet
+##  Telas do Aplicativo
 
-Flexbox
+### 1. Tela de Login
+- Campos de e-mail e senha  
+- Botão de Login  
+- Botões sociais  
+- Navega para a Home
 
-Navegação entre telas
+### 2. Tela Home
+- Busca cursos no Firestore  
+- Exibe lista com nome e descrição  
+- Ao clicar, abre detalhes do curso
 
-Consumo de dados do Firestore
+### 3. Tela de Detalhes
+- Exibe informações completas do curso selecionado  
+- Mostra nome, descrição e ID do Firestore
 
-Passagem de parâmetros entre telas
+---
 
-O app possui três telas principais:
-
- 1. Tela de Login
-
-Contém inputs controlados para e-mail e senha.
-
-Usa useState para armazenar os valores digitados.
-
-Ao clicar em Entrar, o usuário é redirecionado para a Home.
-
-Inclui botões visuais fictícios para login com GitHub e Google.
-
- 2. Home Screen
-
-Busca os cursos cadastrados no Firestore com getDocs().
-
-Renderiza os cursos utilizando uma FlatList.
-
-Cada item possui nome e descrição.
-
-Ao clicar no item, os dados do curso são enviados para a Details Screen via navigation params.
-
- 3. Details Screen
-
-Recebe os dados enviados pela Home por meio de route.params.
-
-Exibe ID, nome e descrição do curso selecionado.
-
- Navegação
-
-A navegação do app é feita com:
-
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { NavigationContainer } from '@react-navigation/native';
-
-
-As telas são registradas dentro de um Stack Navigator, com o Login como rota inicial.
-
- Tecnologias Utilizadas
-
-React Native
-
-Expo
-
-React Navigation (Stack)
-
-Firebase Firestore
-
-JavaScript / JSX
