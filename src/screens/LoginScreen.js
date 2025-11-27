@@ -109,4 +109,4 @@ import {FontAwesome} from '@expo/vector-icons'
 
 })
  
- export default Login
+ export default LoginScreen
